@@ -1,8 +1,8 @@
 import React from 'react'
-
-const Toggglebutton = ({setopen}) => {
+import {Menu, X } from 'react-feather'
+const Toggglebutton = ({setopen,open}) => {
   return (
-    <button onClick={()=>setopen(prev=>!prev)}>Button</button>
+    <button onClick={()=>setopen(prev=>!prev)}>{open?<X/>:<Menu/>}</button>
   )
 }
 
