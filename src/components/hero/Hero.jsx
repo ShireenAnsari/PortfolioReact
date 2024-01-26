@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="wrapper">
         <motion.div className="textcontainer" variants={textvariants} initial='initial' animate='animate'>
             <motion.h2 variants={textvariants}>Shireen Ansari</motion.h2>
-            <motion.h1 variants={textvariants}>React developer</motion.h1>
+            <motion.h1 variants={textvariants}> React Developer</motion.h1>
             <motion.div variants={textvariants} className="buttons">
                 <motion.button variants={textvariants}>See the Latest works</motion.button>
                 <motion.button variants={textvariants}>Contact Me</motion.button>
@@ -49,8 +49,8 @@ const Hero = () => {
             <motion.img variants={textvariants} animate="scrollButton" src="/scroll.png" alt="" srcset="" />
         </motion.div>
         </div>
-       <motion.div variants={slidervariants} initial="initial" animate='animate' className="slidingTextContainer">
-        Web developer
+       <motion.div  variants={slidervariants}  initial='initial' animate='animate'  className="slidingTextContainer">
+       Web Developer
        </motion.div>
         <div className="imageContainer">
             <img src="/hero.png" alt="" srcset="" />
