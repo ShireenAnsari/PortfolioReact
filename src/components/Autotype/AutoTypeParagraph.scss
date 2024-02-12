@@ -1,0 +1,32 @@
+@import '../../app.scss';
+.Autotype{
+  max-width: 800px;
+  color:lightcoral;
+  font-size:20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display:flex;
+  
+ @include mobile{
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+ }
+  .Type{
+    margin-left: 138px;
+    margin-top: 60px;
+    @include mobile{
+      margin-top: 20px;
+      margin-left: 20px;
+      
+    }
+  }
+  img{
+    width: 500px;
+    position: absolute;
+    left: 0;
+    @include mobile {
+      display: none;
+      
+    }
+  }
+}

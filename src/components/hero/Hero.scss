@@ -25,7 +25,7 @@
         }
         h2{
             font-size: 30px;
-            color: rebeccapurple;
+            color: lightcoral;
             letter-spacing: 10px;
         }
         h1{
@@ -65,8 +65,10 @@ top: 0;
 right: 0;
 @include mobile{
     height: 50%;
-    width: 100%;
+    width: 74%;
+    align-items: center;
     top: unset;
+    left: 47px;
     bottom: 0;
 }
 img{
@@ -84,6 +86,10 @@ img{
             color: white;
             width: 50%;
             font-weight: bold;
+            @include mobile{
+             display: none;
+            }
 
         }
+        
 }
