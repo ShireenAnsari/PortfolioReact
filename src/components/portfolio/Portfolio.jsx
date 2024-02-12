@@ -23,14 +23,7 @@ const items=[
     img:"/PortfolioWeb.PNG",
     description:"Just created this fully responsive and user friendly portfolio web APP using REACT-JS Saas and frammer motion.Also integrated emailJS for email service. ",demo:"#Home",
     repo:"https://github.com/ShireenAnsari/PortfolioReact.git"
-}, 
-{
-  id:4,
-  title:'Social App',
-  img:"/SocialApp.PNG",
-  description:"Just created this fully responsive and user friendly portfolio web APP using REACT-JS Saas and materialUI for UI Design ",demo:"https://65ca01385b0470d63a9f0625--coruscating-tulumba-c2fc3e.netlify.app/",
-  repo:"https://github.com/ShireenAnsari/SocialMediaApp.git"
-},
+}
 ];
 const redirectToSpecificLink = () => {
   // Specify the link you want to redirect to
