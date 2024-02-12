@@ -51,6 +51,7 @@
                    transform: none !important;
                    padding: 5px;
                    align-items: center;
+                   margin: 33px;
         
                 }
                 h2{
@@ -72,6 +73,9 @@
                 }
                 .linktags{
                 gap: 50px;
+                @include mobile{
+                    margin-bottom: 59px;
+                }
                     a{
                         background-color: lightcoral;
                         border: none;

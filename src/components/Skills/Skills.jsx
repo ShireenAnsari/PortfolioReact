@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skills.scss'
-import { animate, motion } from 'framer-motion'
+import {  motion } from 'framer-motion'
 const Skills = () => {
     const variants={
         initial:{
@@ -21,7 +21,7 @@ const Skills = () => {
     }
   return (
     <>
-     <motion.div variants={variants} initial='initial' animate='animate' class="skills_section">
+     <motion.div  variants={variants} initial='initial'   animate='animate' class="skills_section">
         <div class="skills_head">
             <h2>My <span>Skills</span></h2>
             <p>Here is my skills to represent my Expertise</p>
