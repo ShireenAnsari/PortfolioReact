@@ -1,37 +1,50 @@
 import './portfolio.scss'
 import React, { useRef } from 'react'
 import {motion,useScroll,useSpring, useTransform} from 'framer-motion'
-import { Activity, ExternalLink, GitHub, Video } from 'react-feather';
+import { ExternalLink,Lock } from 'react-feather';
 const items=[
     {
         id:1,
         title:'Ticket System',
         img:"/TicketingSystem.PNG",
-        description:"Currently working on ticketing system that let's client create the ticket and admin to Pick that ticket and resolve that at the specific amount of time . The backend api was given i am designing the frontend of this project to fully funtional App using React-JS",
-        demo:"https://drive.google.com/file/d/1du1WI9JD0-FFn4io0k7FU91N2A1GQG0H/view",
-        repo:"https://github.com/ShireenAnsari/TicketingSystem.git"
+        description:"Currently working on ticketing system that let's client create the ticket and admin to Pick that ticket and resolve that at the specific amount of time . The backend api was given i am designing the frontend of this project to fully functional App using React-JS",
+        demo:"https://drive.google.com/file/d/1du1WI9JD0-FFn4io0k7FU91N2A1GQG0H/view"
     },
     {
       id:2,
       title:'Full Stack Blog WebApp',
       img:"/Blog.PNG",
-      description:"Just created the fully funtional Blog web App using React-JS and saas for frontend designing along with that i also created the backend api using node and express js mongodb",demo:"https://drive.google.com/file/d/1xlAqHFWWBF-bY7cAq4IXzeU9z5Mx-s2j/view?usp=sharing",repo:"https://github.com/ShireenAnsari/Blog_WebApp.git"
+      description:"Just created the fully funtional Blog web App using React-JS and saas for frontend designing along with that i also created the backend api using node and express js mysql",demo:"https://drive.google.com/file/d/1xlAqHFWWBF-bY7cAq4IXzeU9z5Mx-s2j/view?usp=sharing"
     },
       {
     id:3,
     title:'Personal Portfolio',
     img:"/PortfolioWeb.PNG",
-    description:"Just created this fully responsive and user friendly portfolio web APP using REACT-JS Saas and frammer motion.Also integrated emailJS for email service. ",demo:"#Home",
-    repo:"https://github.com/ShireenAnsari/PortfolioReact.git"
+    description:"Just created this fully responsive and user friendly portfolio web APP using REACT-JS Saas and frammer motion.Also integrated emailJS for email service. ",demo:"#Home"
+},
+{
+  id:4,
+  title:'Flix Movie App',
+  img:"/FlixMovie.PNG",
+  description:"I've developed a movie app using pure vanilla JavaScript, leveraging the tmdb movie database for fetching a comprehensive list of movies. The application showcases the latest movies and TV shows, incorporating a robust search functionality for a seamless user experience. ",demo:"https://fliexmovieapp.netlify.app/",
+  repo:<Lock/>
+},
+,
+{
+  id:5,
+  title:'Social App',
+  img:"/SocialApp.PNG",
+  description:"I developed the simple frontend design of Social App using React and Material UI for enhancing user friendly interface ",demo:"https://coruscating-tulumba-c2fc3e.netlify.app/",
+  repo:<Lock/>
 }
 ];
-const redirectToSpecificLink = () => {
-  // Specify the link you want to redirect to
-  const targetLink = "https://example.com";
+// const redirectToSpecificLink = () => {
+//   // Specify the link you want to redirect to
+//   const targetLink = "https://example.com";
 
-  // Redirect to the specified link
-  history.push(targetLink);
-};
+//   // Redirect to the specified link
+//   history.push(targetLink);
+// };
 
 const Single=({items})=>{
 
@@ -48,8 +61,10 @@ const Single=({items})=>{
         <h2 >{items.title}</h2>
         <p>{items.description} </p>
         <div className="linktags">
-        <a href={items.demo}><ExternalLink/>  Demo</a>
-        <a  href={items.repo}><GitHub/> Repo</a>
+        <button
+         onclick={()=>location.href=items.demo} type="button"
+         ><ExternalLink/> 
+          Demo</button>
         </div>
       
       </motion.div>
